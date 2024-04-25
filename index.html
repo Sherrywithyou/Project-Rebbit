@@ -1,0 +1,66 @@
+我改的
+别人改的
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="bower_components/firebaseui/dist/firebaseui.js"></script>
+<script src="node_modules/firebaseui/dist/firebaseui.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="js/main.js"></script>
+<script src="js/moment.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+<link type="text/css" rel="stylesheet" href="bower_components/firebaseui/dist/firebaseui.css" />
+<link type="text/css" rel="stylesheet" href="node_modules/firebaseui/dist/firebaseui.css" />
+
+</head>
+<body>
+<div>
+<form id="loginForm" style="padding: 16px">
+</form>
+<input type="button" value="Sign Out" id="signout" style="float: right;">
+
+<div id = "loggedIn" >
+<!-- The Modal -->
+<div id="myModal1" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+        Edit message: <input type="text"   id ="edit"><br>
+        <input type="button" value="update" id="update"><br>
+        <input type="button" value="delete" id="delete"><br>
+    </form>  
+  </div>
+</div>
+<div id="myModal2" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+        Add message: <input type="text"   id ="msg"><br>
+        <input type="button" value="Send" id="sendMsg"><br>
+    </form>   
+  </div>
+</div>
+<div id ="topics"></div>
+<div id ="realTopics"></div>
+</div>
+</div>
+<div class="footer">
+    <form>
+        Your name: <input type="text"   id ="ename">
+        Your Email: <input type="text"   id ="email">
+        Notes: <input type="text"   id ="note">
+        <input type="button" value="submmit" id="submmit">
+    </form>
+</div>
+</body>
+
+</html>
